@@ -220,19 +220,13 @@ Summarize this video.
 
 ## Extension UI
 
-Add screenshot here:
-
-```markdown
 ![Extension UI](assets/extension-ui.png)
-```
+
 
 ## Answer Generation
 
-Add screenshot here:
-
-```markdown
 ![Answer Generation](assets/answer-generation.png)
-```
+
 
 ---
 
