@@ -1,0 +1,173 @@
+#yt-copilot {
+    position: fixed;
+    top: 0;
+    right: 0;
+
+    width: 360px;
+    height: 100vh;
+
+    background: #0f172a;
+    color: white;
+
+    z-index: 999999;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+
+    box-shadow: -8px 0px 25px rgba(0, 0, 0, 0.4);
+
+    font-family: Inter, Arial, sans-serif;
+
+    backdrop-filter: blur(10px);
+}
+
+.copilot-header {
+    font-size: 24px;
+    font-weight: 700;
+
+    margin-bottom: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#question {
+    width: 100%;
+    min-height: 120px;
+
+    resize: none;
+
+    background: #1e293b;
+
+    border: 1px solid #334155;
+
+    border-radius: 12px;
+
+    color: white;
+
+    padding: 15px;
+
+    font-size: 14px;
+
+    outline: none;
+}
+
+#question::placeholder {
+    color: #94a3b8;
+}
+
+#askBtn {
+    margin-top: 12px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    cursor: pointer;
+
+    background: linear-gradient(
+        135deg,
+        #3b82f6,
+        #8b5cf6
+    );
+
+    color: white;
+
+    font-weight: 600;
+
+    font-size: 15px;
+
+    transition: all 0.2s ease;
+}
+
+#askBtn:hover {
+    transform: translateY(-2px);
+}
+
+.top-bar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    margin-bottom:20px;
+}
+
+
+#closeBtn{
+    width:35px;
+    height:35px;
+
+    border-radius:50%;
+
+    border:none;
+
+    background:#1e293b;
+
+    color:white;
+
+    cursor:pointer;
+
+    font-size:18px;
+}
+
+#closeBtn:hover{
+    background:#334155;
+}
+
+#response {
+    margin-top: 20px;
+
+    flex: 1;
+
+    overflow-y: auto;
+
+    background: #1e293b;
+
+    border-radius: 12px;
+
+    padding: 16px;
+
+    line-height: 1.7;
+
+    color: #e2e8f0;
+
+    border: 1px solid #334155;
+}
+
+#response::-webkit-scrollbar {
+    width: 6px;
+}
+
+#response::-webkit-scrollbar-thumb {
+    background: #475569;
+    border-radius: 10px;
+}
+
+
+.loader{
+    width:20px;
+    height:20px;
+
+    border:3px solid #334155;
+    border-top:3px solid #3b82f6;
+
+    border-radius:50%;
+
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    100%{
+        transform:rotate(360deg);
+    }
+}
